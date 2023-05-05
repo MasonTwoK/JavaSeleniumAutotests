@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--Part of https://github.com/SeleniumHQ/seleniumhq.github.io/blob/trunk/examples/java/pom.xml#L22-L26 -->
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <groupId>org.example</groupId>
+    <artifactId>JavaSeleniumAutotests</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!--https://github.com/SeleniumHQ/seleniumhq.github.io/blob/trunk/examples/java/pom.xml#L22-L26-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.9.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--https://jar-download.com/artifacts/org.seleniumhq.selenium/selenium-api/4.9.0/source-code/org/openqa/selenium/WebDriver.java-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-api</artifactId>
+            <version>4.9.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--https://jar-download.com/artifacts/org.seleniumhq.selenium/selenium-chrome-driver/4.9.0/source-code/org/openqa/selenium/chrome/ChromeDriver.java-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.9.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--https://central.sonatype.com/artifact/org.junit.jupiter/junit-jupiter/5.9.2-->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.9.2</version>
+        </dependency>
+
+        <!--https://bonigarcia.dev/webdrivermanager/-->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.3.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--https://assertj.github.io/doc/-->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.24.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
