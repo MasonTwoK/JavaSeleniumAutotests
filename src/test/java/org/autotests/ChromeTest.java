@@ -1,4 +1,4 @@
-package org.example; // What is it for?
+package org.autotests; // What is it for?
 
 import static org.assertj.core.api.Assertions.assertThat; // Why is it static?
 
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 // Why we cannot just import org.openqa.selenium
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -47,6 +47,5 @@ class ChromeTest {
 
         // Verify
         assertThat(title).contains("Google");
-
     }
 }
