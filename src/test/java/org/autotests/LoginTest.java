@@ -13,4 +13,10 @@ class LoginTest extends BaseTest {
         // Verify
         assertThat(title).contains("OLX.ua");
     }
+
+
+    @Test
+    void test_open_login_page(){
+            
+    }
 }
