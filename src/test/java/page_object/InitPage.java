@@ -1,7 +1,12 @@
 package page_object;
 
+import org.openqa.selenium.WebDriver;
+
 public class InitPage extends BasePage{
-    public static void base_page(){
-        System.out.println("Page object");
+
+    public InitPage (WebDriver driver){
+        super(driver);
     }
+
+    public HeaderSection header = new HeaderSection(driver);
 }
