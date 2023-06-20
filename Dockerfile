@@ -15,4 +15,5 @@ WORKDIR /usr/src/mymaven
 
 CMD ["mvn clean test"]
 
+
 EXPOSE 80
