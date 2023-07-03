@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Added dockerfile with linux">
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Updated dockerfile with Maven">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
       <recent name="org.autotests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in JavaSeleniumAutotests">
+  <component name="RunManager" selected="JUnit.LocalTest.test">
     <configuration name="All in JavaSeleniumAutotests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,9 +116,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LocalTest.test" />
         <item itemvalue="JUnit.All in JavaSeleniumAutotests" />
         <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="JUnit.LocalTest.test" />
         <item itemvalue="JUnit.LoginTest.test_open_login_page" />
         <item itemvalue="JUnit.LoginTest" />
       </list>
@@ -145,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687242380010</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="! Updated dockerfile with Maven">
+      <created>1687242456717</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687242456717</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +170,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="! Added dockerfile with linux" />
-    <option name="LAST_COMMIT_MESSAGE" value="! Added dockerfile with linux" />
+    <MESSAGE value="! Updated dockerfile with Maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="! Updated dockerfile with Maven" />
   </component>
 </project>
