@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Updated dockerfile with Maven">
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Updated dockerfile, removed deprecated lines and file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DockerMaven" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,16 +50,52 @@
       <recent name="org.autotests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LocalTest.test">
-    <configuration name="All in JavaSeleniumAutotests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LocalTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="JavaSeleniumAutotests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.autotests" />
+      <option name="MAIN_CLASS_NAME" value="org.autotests.ChromeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChromeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.autotests" />
+      <option name="MAIN_CLASS_NAME" value="org.autotests.ChromeTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
         <pattern>
@@ -69,8 +105,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.autotests" />
       <option name="MAIN_CLASS_NAME" value="org.autotests.LocalTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,36 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.test_open_login_page" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSeleniumAutotests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.autotests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.autotests" />
-      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
-      <option name="METHOD_NAME" value="test_open_login_page" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LocalTest.test" />
-        <item itemvalue="JUnit.All in JavaSeleniumAutotests" />
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="JUnit.LoginTest.test_open_login_page" />
+        <item itemvalue="JUnit.LocalTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ChromeTest.test" />
+        <item itemvalue="JUnit.ChromeTest" />
         <item itemvalue="JUnit.LoginTest" />
       </list>
     </recent_temporary>
@@ -154,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687242456717</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="! Updated dockerfile with right version of java">
+      <created>1688411065064</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688411065064</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +189,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="! Added dockerfile with linux" />
     <MESSAGE value="! Updated dockerfile with Maven" />
-    <option name="LAST_COMMIT_MESSAGE" value="! Updated dockerfile with Maven" />
+    <MESSAGE value="! Updated dockerfile with right version of java" />
+    <MESSAGE value="! Updated dockerfile, removed deprecated lines and file" />
+    <option name="LAST_COMMIT_MESSAGE" value="! Updated dockerfile, removed deprecated lines and file" />
   </component>
 </project>

@@ -1,5 +1,0 @@
-FROM maven
-
-
-COPY ./pom.xml /tmp/pom.xml
-
