@@ -3,10 +3,7 @@ package org.autotests; // What is it for?
 import static org.assertj.core.api.Assertions.assertThat; // Why is it static?
 
 // Why we cannot just import org.junit.jupiter.api ???
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 // Why we cannot just import org.openqa.selenium
 import org.openqa.selenium.WebDriver;
@@ -38,7 +35,7 @@ class ChromeTest {
         driver.quit();
     }
 
-
+    @Disabled
     @Test
     void test(){
         // Exercise
