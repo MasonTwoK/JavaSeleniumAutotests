@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Updated dockerfile, removed deprecated lines and file">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/BaseTest.java" afterDir="false" />
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Put POM pattern tests to ignore.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LocalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LocalTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +33,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Data/Java/JavaSeleniumAutotests&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Data/Java/JavaSeleniumAutotests",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Data\Java\JavaSeleniumAutotests" />
@@ -48,7 +50,15 @@
       <recent name="org.autotests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.autotests in JavaSeleniumAutotests">
+  <component name="RunManager" selected="JUnit.LocalTest">
+    <configuration name="All in JavaSeleniumAutotests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
@@ -59,21 +69,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.autotests" />
       <option name="MAIN_CLASS_NAME" value="org.autotests.BaseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSeleniumAutotests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.autotests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.autotests" />
-      <option name="MAIN_CLASS_NAME" value="org.autotests.ChromeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LocalTest" />
+        <item itemvalue="JUnit.All in JavaSeleniumAutotests" />
         <item itemvalue="JUnit.autotests in JavaSeleniumAutotests" />
         <item itemvalue="JUnit.BaseTest" />
         <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.ChromeTest" />
-        <item itemvalue="JUnit.LocalTest" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +180,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689367588101</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="! Put POM pattern tests to ignore.">
+      <created>1689367795539</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689367795539</updated>
+    </task>
+    <task id="LOCAL-00009" summary="! Put POM pattern tests to ignore.">
+      <created>1689367807623</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689367807623</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +213,7 @@
     <MESSAGE value="! Updated dockerfile with Maven" />
     <MESSAGE value="! Updated dockerfile with right version of java" />
     <MESSAGE value="! Updated dockerfile, removed deprecated lines and file" />
-    <option name="LAST_COMMIT_MESSAGE" value="! Updated dockerfile, removed deprecated lines and file" />
+    <MESSAGE value="! Put POM pattern tests to ignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="! Put POM pattern tests to ignore." />
   </component>
 </project>
