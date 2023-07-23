@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Attempt to fix Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.">
-      <change afterPath="$PROJECT_DIR$/Dockerfile_alpine" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-    </list>
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Attempt to fix Response code 500. Message: unknown error: Chrome failed to start: exited abnormally." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689501118986</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="! Attempt to fix Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.">
+      <created>1690106615865</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690106615865</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
