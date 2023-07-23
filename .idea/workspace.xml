@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Put POM pattern tests to ignore.">
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Attempt to fix Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.">
+      <change afterPath="$PROJECT_DIR$/Dockerfile_alpine" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LocalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LocalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,15 +34,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Data/Java/JavaSeleniumAutotests",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Data/Java/JavaSeleniumAutotests&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Data\Java\JavaSeleniumAutotests" />
@@ -194,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689367807623</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="! Attempt to fix Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.">
+      <created>1689501118986</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689501118986</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +222,7 @@
     <MESSAGE value="! Updated dockerfile with right version of java" />
     <MESSAGE value="! Updated dockerfile, removed deprecated lines and file" />
     <MESSAGE value="! Put POM pattern tests to ignore." />
-    <option name="LAST_COMMIT_MESSAGE" value="! Put POM pattern tests to ignore." />
+    <MESSAGE value="! Attempt to fix Response code 500. Message: unknown error: Chrome failed to start: exited abnormally." />
+    <option name="LAST_COMMIT_MESSAGE" value="! Attempt to fix Response code 500. Message: unknown error: Chrome failed to start: exited abnormally." />
   </component>
 </project>
