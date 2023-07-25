@@ -1,4 +1,4 @@
-package org.autotests;
+package org.localtest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

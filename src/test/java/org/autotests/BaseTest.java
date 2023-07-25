@@ -1,13 +1,14 @@
 package org.autotests;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 class BaseTest {
 
     WebDriver driver; //Q: We declare driver value as WebDriver data type. Am I right?
-    WebDriverManager wdm = WebDriverManager.chromedriver().browserInDocker();
+    //WebDriverManager wdm = WebDriverManager.chromedriver().browserInDocker();
 
     @BeforeAll
     static void setupClass(){
@@ -19,7 +20,7 @@ class BaseTest {
     //Precondition
     @BeforeEach
     void setupTest(){
-        driver = wdm.create(); // Q: What is actually going on here?
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         // Q: Why do we not use driver.get("https://www.olx.ua/"); in the next line
         driver.navigate().to("https://www.olx.ua/");
@@ -30,11 +31,5 @@ class BaseTest {
     @AfterEach
     void teardown(){
         driver.quit();
-    }
-
-    @Disabled
-    @Test
-    void test(){
-
     }
 }
