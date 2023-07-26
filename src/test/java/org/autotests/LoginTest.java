@@ -19,15 +19,19 @@ class LoginTest extends BaseTest {
     }
 
     @Test
-    public void test_open_login_page() throws InterruptedException{
+    public void test_open_login_page(){
         InitPage initPage = new InitPage(driver);
         initPage.header.click_login();
 
-        sleep(5000);
+        // Execute
+        String title = driver.getTitle();
+
+        // Verify
+        assertThat(title).contains("OLX.UA - Увійти");
     }
 
     @Test
-    public void test_login_with_empty_fields(){ //Q: What is the difference between public void and void method?
-
+    public void test_login_with_empty_fields() throws InterruptedException{ //Q: What is the difference between public void and void method?
+        sleep(1000);
     }
 }

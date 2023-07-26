@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! New docker file with comments related to investigation of Error code 500 issue.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/autotests/SomePageTest.java" afterDir="false" />
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Created HeaderSection added and costructor for BasePage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/ChromeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LocalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/localtest/LocalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/HeaderSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/HeaderSection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,6 +252,7 @@
     <MESSAGE value="! Put POM pattern tests to ignore." />
     <MESSAGE value="! Attempt to fix Response code 500. Message: unknown error: Chrome failed to start: exited abnormally." />
     <MESSAGE value="! New docker file with comments related to investigation of Error code 500 issue." />
-    <option name="LAST_COMMIT_MESSAGE" value="! New docker file with comments related to investigation of Error code 500 issue." />
+    <MESSAGE value="! Created HeaderSection added and costructor for BasePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="! Created HeaderSection added and costructor for BasePage" />
   </component>
 </project>

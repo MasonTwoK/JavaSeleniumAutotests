@@ -6,10 +6,13 @@ import org.openqa.selenium.WebElement;
 
 public class HeaderSection extends BasePage{
 
-    public HeaderSection(WebDriver driver){
+    //Q: In the next line we are basically inherit driver value from Base Page, am I right?
+    public HeaderSection(WebDriver driver) {
         super(driver);
     }
-    private WebElement login_button = driver.findElement(By.id("topLoginLink"));
+
+    //WebElement login_button = driver.findElement(By.id("topLoginLink")); Q: What is better to use?
+    WebElement login_button = driver.findElement(By.xpath("//a[@href='https://www.olx.ua/uk/myaccount/']"));
 
     public void click_login(){
         login_button.click();
