@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Created HeaderSection added and costructor for BasePage">
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Created HeaderSection added and constructor for BasePage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/page_object/HeaderSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/HeaderSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/InitPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/InitPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2PYCKVlicoksWfmjoFs0ch8gpdE" />
   <component name="ProjectViewState">
@@ -53,20 +58,7 @@
       <recent name="org.autotests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="JavaSeleniumAutotests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LoginTest.test_login_with_empty_fields">
     <configuration name="BaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
@@ -97,6 +89,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.test_login_with_empty_fields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.autotests" />
+      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
+      <option name="METHOD_NAME" value="test_login_with_empty_fields" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
@@ -122,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginTest.test_login_with_empty_fields" />
         <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.autotests in JavaSeleniumAutotests" />
         <item itemvalue="JUnit.SomePageTest" />
         <item itemvalue="JUnit.BaseTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690108234949</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="! Created HeaderSection added and constructor for BasePage">
+      <created>1690353774906</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690353774906</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,6 +268,18 @@
     <MESSAGE value="! Attempt to fix Response code 500. Message: unknown error: Chrome failed to start: exited abnormally." />
     <MESSAGE value="! New docker file with comments related to investigation of Error code 500 issue." />
     <MESSAGE value="! Created HeaderSection added and costructor for BasePage" />
-    <option name="LAST_COMMIT_MESSAGE" value="! Created HeaderSection added and costructor for BasePage" />
+    <MESSAGE value="! Created HeaderSection added and constructor for BasePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="! Created HeaderSection added and constructor for BasePage" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

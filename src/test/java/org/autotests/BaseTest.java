@@ -6,7 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 class BaseTest {
-    WebDriver driver; //Q: We declare driver value as WebDriver data type. Am I right?
+    //Q: Does the next line is needed to be protected?
+    protected WebDriver driver; //Q: We declare driver value as WebDriver data type. Am I right?
     //WebDriverManager wdm = WebDriverManager.chromedriver().browserInDocker();
 
     @BeforeAll

@@ -21,7 +21,7 @@ class LoginTest extends BaseTest {
     @Test
     public void test_open_login_page(){
         InitPage initPage = new InitPage(driver);
-        initPage.header.click_login();
+        initPage.header.ClickLogin();
 
         // Execute
         String title = driver.getTitle();
@@ -32,6 +32,9 @@ class LoginTest extends BaseTest {
 
     @Test
     public void test_login_with_empty_fields() throws InterruptedException{ //Q: What is the difference between public void and void method?
-        sleep(1000);
+        InitPage initPage = new InitPage(driver);
+        initPage.header.ClickLogin();
+
+        sleep(5000);
     }
 }
