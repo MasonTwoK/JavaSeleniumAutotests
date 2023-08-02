@@ -38,10 +38,13 @@ class LoginTest extends BaseTest {
 
         LoginPage loginPage = new LoginPage(driver);
 
-        loginPage.LoginFormUsername();
-        loginPage.LoginFormPassword();
+        loginPage.UsernameFieldClick();
+        loginPage.PasswordFieldClick();
 
+        loginPage.LoginSubmitClick();
 
+        // Work in progress
+        //assertThat(loginPage.missing_username_message).contains("Не забудьте ввести електронну пошту чи телефон");
 
         sleep(5000);
     }

@@ -11,14 +11,23 @@ public class LoginPage extends BasePage {
     }
 
     WebElement username_field = driver.findElement(By.xpath("//input[@name='username']"));
-
-    public void LoginFormUsername(){
+    public void UsernameFieldClick(){
         username_field.click();
     }
 
     WebElement password_field = driver.findElement(By.xpath("//input[@name='password']"));
-
-    public void LoginFormPassword(){
+    public void PasswordFieldClick(){
         password_field.click();
     }
+
+    WebElement submit_button = driver.findElement(By.xpath("//button[@type='submit']"));
+    public void LoginSubmitClick(){
+        submit_button.click();
+    }
+
+
+    //WebElement  missing_username_msg_elm = driver.findElement(By.xpath("//div[@class='css-2t3wbf']"));
+    //public String missing_username_message = missing_username_msg_elm.getText();
+
+
 }
