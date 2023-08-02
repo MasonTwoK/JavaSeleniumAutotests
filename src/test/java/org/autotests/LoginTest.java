@@ -2,6 +2,7 @@ package org.autotests;
 
 import org.junit.jupiter.api.Test;
 import page_object.InitPage;
+import page_object.LoginPage;
 
 
 import static java.lang.Thread.sleep;
@@ -34,6 +35,13 @@ class LoginTest extends BaseTest {
     public void test_login_with_empty_fields() throws InterruptedException{ //Q: What is the difference between public void and void method?
         InitPage initPage = new InitPage(driver);
         initPage.header.ClickLogin();
+
+        LoginPage loginPage = new LoginPage(driver);
+
+        loginPage.LoginFormUsername();
+        loginPage.LoginFormPassword();
+
+
 
         sleep(5000);
     }

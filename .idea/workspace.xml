@@ -4,18 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Created HeaderSection added and constructor for BasePage">
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Added test_login_with_empty_fields() changes in BasePage constructor">
+      <change afterPath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/HeaderSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/HeaderSection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/InitPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/InitPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -59,21 +63,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.LoginTest.test_login_with_empty_fields">
-    <configuration name="BaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSeleniumAutotests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.localtest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.autotests" />
-      <option name="MAIN_CLASS_NAME" value="org.autotests.BaseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
@@ -105,6 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.test_open_login_page" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.autotests" />
+      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
+      <option name="METHOD_NAME" value="test_open_login_page" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
@@ -131,10 +136,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LoginTest.test_login_with_empty_fields" />
+        <item itemvalue="JUnit.LoginTest.test_open_login_page" />
         <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.autotests in JavaSeleniumAutotests" />
         <item itemvalue="JUnit.SomePageTest" />
-        <item itemvalue="JUnit.BaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690353774906</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="! Added test_login_with_empty_fields() changes in BasePage constructor">
+      <created>1690443009597</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690443009597</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,15 +281,16 @@
     <MESSAGE value="! New docker file with comments related to investigation of Error code 500 issue." />
     <MESSAGE value="! Created HeaderSection added and costructor for BasePage" />
     <MESSAGE value="! Created HeaderSection added and constructor for BasePage" />
-    <option name="LAST_COMMIT_MESSAGE" value="! Created HeaderSection added and constructor for BasePage" />
+    <MESSAGE value="! Added test_login_with_empty_fields() changes in BasePage constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="! Added test_login_with_empty_fields() changes in BasePage constructor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="4" />
+          <line>38</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
