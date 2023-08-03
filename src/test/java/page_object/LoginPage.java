@@ -14,6 +14,9 @@ public class LoginPage extends BasePage {
     public void UsernameFieldClick(){
         username_field.click();
     }
+    public void UsernameFieldSendKeys(String text){
+        username_field.sendKeys(text);
+    }
 
     WebElement password_field = driver.findElement(By.xpath("//input[@name='password']"));
     public void PasswordFieldClick(){
@@ -24,6 +27,7 @@ public class LoginPage extends BasePage {
     public void LoginSubmitClick(){
         submit_button.click();
     }
+
 
 
 }

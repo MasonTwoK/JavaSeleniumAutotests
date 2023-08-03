@@ -34,7 +34,7 @@ class LoginTest extends BaseTest {
     }
 
     @Test
-    public void test_login_with_empty_fields() throws InterruptedException{ //Q: What is the difference between public void and void method?
+    public void test_login_with_empty_fields(){ //Q: What is the difference between public void and void method?
         InitPage initPage = new InitPage(driver);
         initPage.header.ClickLogin();
 
@@ -55,6 +55,18 @@ class LoginTest extends BaseTest {
         WebElement missing_password_msg_elm = driver.findElement(By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']"));
         String missing_password_message = missing_password_msg_elm.getText();
         assertThat(missing_password_message).contains("Не забудьте ввести пароль");
+
+    }
+
+    @Test
+    public void test_login_incorrect_email_in_field() throws InterruptedException{ //Q: What is the difference between public void and void method?
+        InitPage initPage = new InitPage(driver);
+        initPage.header.ClickLogin();
+
+        LoginPage loginPage = new LoginPage(driver);
+
+        //loginPage.UsernameFieldClick();
+        loginPage.UsernameFieldSendKeys("email_with_out_dot_sign");
 
 
 

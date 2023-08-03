@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Added LoginPage class with login form methods">
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Added asserts for missing_password_msg and missing_username_msg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" afterDir="false" />
@@ -62,8 +62,8 @@
       <recent name="org.autotests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.test_login_with_empty_fields">
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LoginTest.test_login_incorrect_email_in_field">
+    <configuration name="LoginTest.test_login_incorrect_email_in_field" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
         <pattern>
@@ -73,7 +73,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.autotests" />
       <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="test_login_incorrect_email_in_field" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.test_login_with_correct_login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.autotests" />
+      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
+      <option name="METHOD_NAME" value="test_login_with_correct_login" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,6 +106,22 @@
       <option name="PACKAGE_NAME" value="org.autotests" />
       <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
       <option name="METHOD_NAME" value="test_login_with_empty_fields" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.test_login_with_incorrect_email" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.autotests" />
+      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
+      <option name="METHOD_NAME" value="test_login_with_incorrect_email" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,36 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSeleniumAutotests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.autotests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.autotests" />
-      <option name="MAIN_CLASS_NAME" value="org.autotests.SomePageTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="autotests in JavaSeleniumAutotests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSeleniumAutotests" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/org/autotests" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginTest.test_login_incorrect_email_in_field" />
+        <item itemvalue="JUnit.LoginTest.test_login_with_incorrect_email" />
+        <item itemvalue="JUnit.LoginTest.test_login_with_correct_login" />
         <item itemvalue="JUnit.LoginTest.test_login_with_empty_fields" />
         <item itemvalue="JUnit.LoginTest.test_open_login_page" />
-        <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.autotests in JavaSeleniumAutotests" />
-        <item itemvalue="JUnit.SomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690960741975</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="! Added LoginPage class with login form methods">
+      <created>1691046054958</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1691046054958</updated>
+    </task>
+    <task id="LOCAL-00018" summary="! Added asserts for missing_password_msg and missing_username_msg">
+      <created>1691046101945</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1691046101945</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,15 +314,16 @@
     <MESSAGE value="! Created HeaderSection added and constructor for BasePage" />
     <MESSAGE value="! Added test_login_with_empty_fields() changes in BasePage constructor" />
     <MESSAGE value="! Added LoginPage class with login form methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="! Added LoginPage class with login form methods" />
+    <MESSAGE value="! Added asserts for missing_password_msg and missing_username_msg" />
+    <option name="LAST_COMMIT_MESSAGE" value="! Added asserts for missing_password_msg and missing_username_msg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="9" />
+          <line>72</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
