@@ -7,7 +7,6 @@
     <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Added LoginPage class with login form methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/HeaderSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/HeaderSection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -292,5 +291,16 @@
     <MESSAGE value="! Added test_login_with_empty_fields() changes in BasePage constructor" />
     <MESSAGE value="! Added LoginPage class with login form methods" />
     <option name="LAST_COMMIT_MESSAGE" value="! Added LoginPage class with login form methods" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

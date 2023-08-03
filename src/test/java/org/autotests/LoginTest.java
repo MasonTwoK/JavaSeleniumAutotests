@@ -1,6 +1,8 @@
 package org.autotests;
 
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import page_object.InitPage;
 import page_object.LoginPage;
 
@@ -43,8 +45,18 @@ class LoginTest extends BaseTest {
 
         loginPage.LoginSubmitClick();
 
-        // Work in progress
-        //assertThat(loginPage.missing_username_message).contains("Не забудьте ввести електронну пошту чи телефон");
+
+        // Needed to be improved and initialize in Login Page.
+        WebElement missing_username_msg_elm = driver.findElement(By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
+        String missing_username_message = missing_username_msg_elm.getText();
+        assertThat(missing_username_message).contains("Не забудьте ввести електронну пошту чи телефон");
+
+        // Needed to be improved and initialize in Login Page.
+        WebElement missing_password_msg_elm = driver.findElement(By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']"));
+        String missing_password_message = missing_password_msg_elm.getText();
+        assertThat(missing_password_message).contains("Не забудьте ввести пароль");
+
+
 
         sleep(5000);
     }

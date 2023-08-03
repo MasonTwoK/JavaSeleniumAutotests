@@ -26,8 +26,4 @@ public class LoginPage extends BasePage {
     }
 
 
-    //WebElement  missing_username_msg_elm = driver.findElement(By.xpath("//div[@class='css-2t3wbf']"));
-    //public String missing_username_message = missing_username_msg_elm.getText();
-
-
 }
