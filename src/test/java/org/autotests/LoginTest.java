@@ -51,7 +51,7 @@ class LoginTest extends BaseTest {
         String missing_username_message = missing_username_msg_elm.getText();
         assertThat(missing_username_message).contains("Не забудьте ввести електронну пошту чи телефон");
 
-        // Needed to be improved and initialize in Login Page.
+        // Needed to be improved and initialize in Login Page
         WebElement missing_password_msg_elm = driver.findElement(By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']"));
         String missing_password_message = missing_password_msg_elm.getText();
         assertThat(missing_password_message).contains("Не забудьте ввести пароль");
