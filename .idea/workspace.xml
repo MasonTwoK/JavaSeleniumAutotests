@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Added asserts for missing_password_msg and missing_username_msg">
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Added method UsernameFieldSendKeys">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691046101945</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="! Added method UsernameFieldSendKeys">
+      <created>1691049975872</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1691049975872</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,7 +320,8 @@
     <MESSAGE value="! Added test_login_with_empty_fields() changes in BasePage constructor" />
     <MESSAGE value="! Added LoginPage class with login form methods" />
     <MESSAGE value="! Added asserts for missing_password_msg and missing_username_msg" />
-    <option name="LAST_COMMIT_MESSAGE" value="! Added asserts for missing_password_msg and missing_username_msg" />
+    <MESSAGE value="! Added method UsernameFieldSendKeys" />
+    <option name="LAST_COMMIT_MESSAGE" value="! Added method UsernameFieldSendKeys" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
