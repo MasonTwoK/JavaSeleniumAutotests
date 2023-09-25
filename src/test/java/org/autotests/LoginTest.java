@@ -7,13 +7,12 @@ import page_object.InitPage;
 import page_object.LoginPage;
 
 
-import static java.lang.Thread.sleep;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class LoginTest extends BaseTest {
 
     @Test
-    public void test_open_website(){
+    public void test_website_open(){
         // Execute
         String title = driver.getTitle();
 
@@ -22,7 +21,7 @@ class LoginTest extends BaseTest {
     }
 
     @Test
-    public void test_open_login_page(){
+    public void test_login_page_open(){
         InitPage initPage = new InitPage(driver);
         initPage.header.ClickLogin();
 
@@ -59,7 +58,7 @@ class LoginTest extends BaseTest {
     }
 
     @Test
-    public void test_login_incorrect_email_in_field() throws InterruptedException{ //Q: What is the difference between public void and void method?
+    public void test_login_incorrect_email_in_field(){
         InitPage initPage = new InitPage(driver);
         initPage.header.ClickLogin();
 
@@ -68,8 +67,9 @@ class LoginTest extends BaseTest {
         //loginPage.UsernameFieldClick();
         loginPage.UsernameFieldSendKeys("email_with_out_dot_sign");
 
-
-
-        sleep(5000);
+        // Were we should place elements of page which is appears during
+        WebElement email_warning_msg = driver.findElement(By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
+        String email_warning_message = email_warning_msg.getText();
+        assertThat(email_warning_message).contains("Це не схоже на електронну пошту");
     }
 }

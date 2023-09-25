@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! Added method UsernameFieldSendKeys">
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! test_login_incorrect_email_in_field complete + test naming convention changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
       <recent name="org.autotests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.autotests in JavaSeleniumAutotests">
+  <component name="RunManager" selected="JUnit.LoginTest.test_login_incorrect_email_in_field">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
@@ -93,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.test_login_with_incorrect_email" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.test_login_with_empty_fields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
         <pattern>
@@ -103,7 +104,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.autotests" />
       <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
-      <option name="METHOD_NAME" value="test_login_with_incorrect_email" />
+      <option name="METHOD_NAME" value="test_login_with_empty_fields" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.autotests in JavaSeleniumAutotests" />
         <item itemvalue="JUnit.LoginTest.test_login_incorrect_email_in_field" />
+        <item itemvalue="JUnit.LoginTest.test_login_with_empty_fields" />
+        <item itemvalue="JUnit.autotests in JavaSeleniumAutotests" />
         <item itemvalue="JUnit.LoginTest.test_open_website" />
         <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.LoginTest.test_login_with_incorrect_email" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695391941539</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="! Updated selenium version to 4.12.1">
+      <option name="closed" value="true" />
+      <created>1695645633298</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1695645633298</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,15 +330,17 @@
     <MESSAGE value="! Added LoginPage class with login form methods" />
     <MESSAGE value="! Added asserts for missing_password_msg and missing_username_msg" />
     <MESSAGE value="! Added method UsernameFieldSendKeys" />
-    <option name="LAST_COMMIT_MESSAGE" value="! Added method UsernameFieldSendKeys" />
+    <MESSAGE value="! Updated selenium version to 4.12.1" />
+    <MESSAGE value="! test_login_incorrect_email_in_field complete + test naming convention changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="! test_login_incorrect_email_in_field complete + test naming convention changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="15" />
+          <line>15</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
