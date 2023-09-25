@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! test_login_incorrect_email_in_field added negative check for '.' symbol" />
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! added test_login_incorrect_password_validation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,22 +62,7 @@
       <recent name="org.autotests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.test_login_incorrect_email_in_field">
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSeleniumAutotests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.autotests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.autotests" />
-      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LoginTest.test_login_incorrect_password_validation">
     <configuration name="LoginTest.test_login_incorrect_email_in_field" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
@@ -85,6 +74,38 @@
       <option name="PACKAGE_NAME" value="org.autotests" />
       <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
       <option name="METHOD_NAME" value="test_login_incorrect_email_in_field" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.test_login_incorrect_password_validation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.autotests" />
+      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
+      <option name="METHOD_NAME" value="test_login_incorrect_password_validation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.test_login_page_open" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.autotests" />
+      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
+      <option name="METHOD_NAME" value="test_login_page_open" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,22 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.test_open_website" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSeleniumAutotests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.autotests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.autotests" />
-      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
-      <option name="METHOD_NAME" value="test_open_website" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="autotests in JavaSeleniumAutotests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <option name="TEST_OBJECT" value="directory" />
@@ -132,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginTest.test_login_incorrect_password_validation" />
         <item itemvalue="JUnit.LoginTest.test_login_incorrect_email_in_field" />
-        <item itemvalue="JUnit.autotests in JavaSeleniumAutotests" />
         <item itemvalue="JUnit.LoginTest.test_login_with_empty_fields" />
-        <item itemvalue="JUnit.LoginTest.test_open_website" />
-        <item itemvalue="JUnit.LoginTest" />
+        <item itemvalue="JUnit.LoginTest.test_login_page_open" />
+        <item itemvalue="JUnit.autotests in JavaSeleniumAutotests" />
       </list>
     </recent_temporary>
   </component>
@@ -314,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695650612565</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="! test_login_incorrect_email_in_field added negative check for '.' symbol">
+      <option name="closed" value="true" />
+      <created>1695650675670</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1695650675670</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -345,6 +358,7 @@
     <MESSAGE value="! Updated selenium version to 4.12.1" />
     <MESSAGE value="! test_login_incorrect_email_in_field complete + test naming convention changed" />
     <MESSAGE value="! test_login_incorrect_email_in_field added negative check for '.' symbol" />
-    <option name="LAST_COMMIT_MESSAGE" value="! test_login_incorrect_email_in_field added negative check for '.' symbol" />
+    <MESSAGE value="! added test_login_incorrect_password_validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="! added test_login_incorrect_password_validation" />
   </component>
 </project>

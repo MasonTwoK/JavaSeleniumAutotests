@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import page_object.InitPage;
 import page_object.LoginPage;
 
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 class LoginTest extends BaseTest {
@@ -70,15 +69,34 @@ class LoginTest extends BaseTest {
 
         // Needed to be improved and initialize in Login Page.
         WebElement email_warning_msg = driver.findElement(
-                By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
+                By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']")
+        );
         String email_warning_message = email_warning_msg.getText();
         assertThat(email_warning_message).contains("Це не схоже на електронну пошту");
 
         loginPage.UsernameFieldSendKeys("email_with_@_&_without_dot_sign");
         email_warning_msg = driver.findElement(
-                By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
+                By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']")
+        );
 
         email_warning_message = email_warning_msg.getText();
         assertThat(email_warning_message).contains("Це не схоже на електронну пошту");
+    }
+
+    @Test
+    public void test_login_incorrect_password_validation(){
+        InitPage initPage = new InitPage(driver);
+        initPage.header.ClickLogin();
+
+        LoginPage loginPage = new LoginPage(driver);
+
+        loginPage.PasswordFieldSendKeys("1");
+
+        WebElement password_warning_msg = driver.findElement(
+                By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']")
+        );
+
+        String password_warning_message = password_warning_msg.getText();
+        assertThat(password_warning_message).contains("надто короткий.");
     }
 }

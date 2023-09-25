@@ -23,6 +23,8 @@ public class LoginPage extends BasePage {
         password_field.click();
     }
 
+    public void PasswordFieldSendKeys(String text) {password_field.sendKeys(text);}
+
     WebElement submit_button = driver.findElement(By.xpath("//button[@type='submit']"));
     public void LoginSubmitClick(){
         submit_button.click();
