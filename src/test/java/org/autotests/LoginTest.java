@@ -46,12 +46,14 @@ class LoginTest extends BaseTest {
 
 
         // Needed to be improved and initialize in Login Page.
-        WebElement missing_username_msg_elm = driver.findElement(By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
+        WebElement missing_username_msg_elm = driver.findElement(
+                By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
         String missing_username_message = missing_username_msg_elm.getText();
         assertThat(missing_username_message).contains("Не забудьте ввести електронну пошту чи телефон");
 
         // Needed to be improved and initialize in Login Page
-        WebElement missing_password_msg_elm = driver.findElement(By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']"));
+        WebElement missing_password_msg_elm = driver.findElement(
+                By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']"));
         String missing_password_message = missing_password_msg_elm.getText();
         assertThat(missing_password_message).contains("Не забудьте ввести пароль");
 
@@ -64,12 +66,19 @@ class LoginTest extends BaseTest {
 
         LoginPage loginPage = new LoginPage(driver);
 
-        //loginPage.UsernameFieldClick();
         loginPage.UsernameFieldSendKeys("email_with_out_dot_sign");
 
-        // Were we should place elements of page which is appears during
-        WebElement email_warning_msg = driver.findElement(By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
+        // Needed to be improved and initialize in Login Page.
+        WebElement email_warning_msg = driver.findElement(
+                By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
         String email_warning_message = email_warning_msg.getText();
+        assertThat(email_warning_message).contains("Це не схоже на електронну пошту");
+
+        loginPage.UsernameFieldSendKeys("email_with_@_&_without_dot_sign");
+        email_warning_msg = driver.findElement(
+                By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
+
+        email_warning_message = email_warning_msg.getText();
         assertThat(email_warning_message).contains("Це не схоже на електронну пошту");
     }
 }
