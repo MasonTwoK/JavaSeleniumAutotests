@@ -1,12 +1,12 @@
-package org.autotests;
+package org.autotests; //Q: How does "package" works?
 
-import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Disabled; // Q: How does import works in Java?
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import page_object.InitPage;
 import page_object.LoginPage;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat; // Q: How does static works?
 
 class LoginTest extends BaseTest {
 
@@ -60,7 +60,7 @@ class LoginTest extends BaseTest {
 
     @Disabled("[BUG](P4). Actual Result: Це не схоже на електронну пошту, Expected Result: Ця пошта задовга")
     @Test
-    public void test_login_email_field_validation(){
+    public void test_login_username_email_field_validation(){
         InitPage initPage = new InitPage(driver);
         initPage.header.ClickLogin();
 
@@ -125,4 +125,21 @@ class LoginTest extends BaseTest {
         loginPage.warning_message_text = loginPage.warning_message_elm.getText();
         assertThat(loginPage.warning_message_text).contains("Цей пароль дуже довгий");
     }
+
+    @Test
+    public void test_login_username_phone_validation(){
+        InitPage initPage = new InitPage(driver);
+        initPage.header.ClickLogin();
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.UsernameFieldSendKeys("6");
+
+        //Need to be moved to LoginPage
+        loginPage.warning_message_elm = driver.findElement(
+                By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
+        loginPage.warning_message_text = loginPage.warning_message_elm.getText();
+
+        assertThat(loginPage.warning_message_text).contains("не схоже на дійсний номер");
+    }
+
 }

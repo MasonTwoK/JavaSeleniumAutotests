@@ -10,6 +10,6 @@ public class InitPage extends BasePage{
     }
 
     public HeaderSection header;
-    //Q: I do we just do not do the next:
+    //Q: Why do we just do not do the next:
     // public HeaderSection header = new HeaderSection(driver);
 }
