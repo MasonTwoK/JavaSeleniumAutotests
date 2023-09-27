@@ -10,6 +10,14 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
+    public WebElement warning_message_elm;
+    public String warning_message_text;
+    public String email_limit_string128 = "jsqCT3ltB2Y7mNXAebKyQFDwamRJrBGkWcuRYlsVXVQV8um" +
+            "tL26zX9n24Fl058zjsRoKLbPhfS6PvGAKKjQKjgXuC2c3jQMJS5tz1CHdtP4mZmZ6zwga6gM@gmail.com";
+    public String password_limit_string256 =
+            "YgUiLnJdFmEr9rwKQ8gA6GRyW4tVekJP19IjCWzTwNkE2h5DElYwxN66YQDwzAWWUrt0Sn0dbTC7jelglFb7pLKNXX7Ybtk" +
+                    "7D7H3IxEK9ujNWHPVQeUlr08U8RqO16rzYZvCwu0h9YYiTxANY288E8gNKcbQ3QsZw3ungiyXFLKJ9X2YGnUM65n" +
+                    "OFffXWQyn4iArfSMcZQU5AaazZ6t65tg3wYscFq3fGsaJfPTnVWMTg6B30cSz5jeJBp309G8z";
     WebElement username_field = driver.findElement(By.xpath("//input[@name='username']"));
     public void UsernameFieldClick(){
         username_field.click();
@@ -29,7 +37,4 @@ public class LoginPage extends BasePage {
     public void LoginSubmitClick(){
         submit_button.click();
     }
-
-
-
 }

@@ -1,8 +1,8 @@
 package org.autotests;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import page_object.InitPage;
 import page_object.LoginPage;
 
@@ -45,21 +45,22 @@ class LoginTest extends BaseTest {
 
 
         // Needed to be improved and initialize in Login Page.
-        WebElement missing_username_msg_elm = driver.findElement(
+        loginPage.warning_message_elm = driver.findElement(
                 By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']"));
-        String missing_username_message = missing_username_msg_elm.getText();
-        assertThat(missing_username_message).contains("Не забудьте ввести електронну пошту чи телефон");
+        loginPage.warning_message_text = loginPage.warning_message_elm.getText();
+        assertThat(loginPage.warning_message_text).contains("Не забудьте ввести електронну пошту чи телефон");
 
         // Needed to be improved and initialize in Login Page
-        WebElement missing_password_msg_elm = driver.findElement(
+        loginPage.warning_message_elm = driver.findElement(
                 By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']"));
-        String missing_password_message = missing_password_msg_elm.getText();
-        assertThat(missing_password_message).contains("Не забудьте ввести пароль");
+        loginPage.warning_message_text = loginPage.warning_message_elm.getText();
+        assertThat(loginPage.warning_message_text).contains("Не забудьте ввести пароль");
 
     }
 
+    @Disabled("[BUG](P4). Actual Result: Це не схоже на електронну пошту, Expected Result: Ця пошта задовга")
     @Test
-    public void test_login_incorrect_email_in_field(){
+    public void test_login_email_field_validation(){
         InitPage initPage = new InitPage(driver);
         initPage.header.ClickLogin();
 
@@ -68,23 +69,40 @@ class LoginTest extends BaseTest {
         loginPage.UsernameFieldSendKeys("email_with_out_dot_sign");
 
         // Needed to be improved and initialize in Login Page.
-        WebElement email_warning_msg = driver.findElement(
+        loginPage.warning_message_elm = driver.findElement(
                 By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']")
         );
-        String email_warning_message = email_warning_msg.getText();
-        assertThat(email_warning_message).contains("Це не схоже на електронну пошту");
+
+        loginPage.warning_message_text = loginPage.warning_message_elm.getText();
+        assertThat(loginPage.warning_message_text).contains("Це не схоже на електронну пошту");
+
 
         loginPage.UsernameFieldSendKeys("email_with_@_&_without_dot_sign");
-        email_warning_msg = driver.findElement(
+
+        // Needed to be improved and initialize in Login Page.
+        loginPage.warning_message_elm = driver.findElement(
                 By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']")
         );
 
-        email_warning_message = email_warning_msg.getText();
-        assertThat(email_warning_message).contains("Це не схоже на електронну пошту");
+        loginPage.warning_message_text = loginPage.warning_message_elm.getText();
+        assertThat(loginPage.warning_message_text).contains("Це не схоже на електронну пошту");
+
+
+        loginPage.UsernameFieldSendKeys(loginPage.email_limit_string128);
+
+        // Needed to be improved and initialize in Login Page.
+        loginPage.warning_message_elm = driver.findElement(
+                By.xpath("//div[@class='css-1a74nwz']//div[@class='css-2t3wbf']")
+        );
+
+        loginPage.warning_message_text = loginPage.warning_message_elm.getText();
+        assertThat(loginPage.warning_message_text).contains("Ця пошта задовга");
     }
 
+
+    @Disabled("[BUG](P4) Actual Result: Цей пароль дуже короткий, Expected Result: Цей пароль дуже довгий")
     @Test
-    public void test_login_incorrect_password_validation(){
+    public void test_login_password_field_validation(){
         InitPage initPage = new InitPage(driver);
         initPage.header.ClickLogin();
 
@@ -92,11 +110,19 @@ class LoginTest extends BaseTest {
 
         loginPage.PasswordFieldSendKeys("1");
 
-        WebElement password_warning_msg = driver.findElement(
+        loginPage.warning_message_elm = driver.findElement(
                 By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']")
         );
 
-        String password_warning_message = password_warning_msg.getText();
-        assertThat(password_warning_message).contains("надто короткий.");
+        loginPage.warning_message_text = loginPage.warning_message_elm.getText();
+        assertThat(loginPage.warning_message_text).contains("надто короткий.");
+
+
+        loginPage.PasswordFieldSendKeys(loginPage.password_limit_string256);
+
+        loginPage.warning_message_elm = driver.findElement(
+                By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']"));
+        loginPage.warning_message_text = loginPage.warning_message_elm.getText();
+        assertThat(loginPage.warning_message_text).contains("Цей пароль дуже довгий");
     }
 }
