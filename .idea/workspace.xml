@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! added test_login_incorrect_password_validation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" afterDir="false" />
-    </list>
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! varibales moved to LoginPage + 2 bugs for fields validation highlighted" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -342,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695652950436</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="! varibales moved to LoginPage + 2 bugs for fields validation highlighted">
+      <option name="closed" value="true" />
+      <created>1695804944821</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1695804944821</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -374,6 +378,7 @@
     <MESSAGE value="! test_login_incorrect_email_in_field complete + test naming convention changed" />
     <MESSAGE value="! test_login_incorrect_email_in_field added negative check for '.' symbol" />
     <MESSAGE value="! added test_login_incorrect_password_validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="! added test_login_incorrect_password_validation" />
+    <MESSAGE value="! varibales moved to LoginPage + 2 bugs for fields validation highlighted" />
+    <option name="LAST_COMMIT_MESSAGE" value="! varibales moved to LoginPage + 2 bugs for fields validation highlighted" />
   </component>
 </project>
