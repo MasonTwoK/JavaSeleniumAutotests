@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! variables moved to LoginPage + 2 bugs for fields validation highlighted">
+    <list default="true" id="5f984cdc-e5bc-4e2d-bd5e-85c9eb4aacf5" name="Changes" comment="! added test_login_incorrect_password_validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/InitPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/InitPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page_object/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <recent name="org.autotests" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.test_login_username_phone_validation">
+  <component name="RunManager" selected="JUnit.LoginTest.test_login_email_field_validation">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
@@ -94,6 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.test_login_incorrect_email_in_field" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSeleniumAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.autotests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.autotests" />
+      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
+      <option name="METHOD_NAME" value="test_login_incorrect_email_in_field" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTest.test_login_password_field_validation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSeleniumAutotests" />
       <extension name="coverage">
@@ -105,22 +121,6 @@
       <option name="PACKAGE_NAME" value="org.autotests" />
       <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
       <option name="METHOD_NAME" value="test_login_password_field_validation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.test_login_username_phone_validation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaSeleniumAutotests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.autotests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.autotests" />
-      <option name="MAIN_CLASS_NAME" value="org.autotests.LoginTest" />
-      <option name="METHOD_NAME" value="test_login_username_phone_validation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginTest.test_login_username_phone_validation" />
-        <item itemvalue="JUnit.LoginTest.test_login_password_field_validation" />
-        <item itemvalue="JUnit.LoginTest.test_login_with_empty_fields" />
-        <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.LoginTest.test_login_email_field_validation" />
+        <item itemvalue="JUnit.LoginTest" />
+        <item itemvalue="JUnit.LoginTest.test_login_with_empty_fields" />
+        <item itemvalue="JUnit.LoginTest.test_login_password_field_validation" />
+        <item itemvalue="JUnit.LoginTest.test_login_incorrect_email_in_field" />
       </list>
     </recent_temporary>
   </component>
@@ -342,23 +342,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695652950436</updated>
     </task>
-    <task id="LOCAL-00026" summary="! varibales moved to LoginPage + 2 bugs for fields validation highlighted">
-      <option name="closed" value="true" />
-      <created>1695804944821</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1695804944821</updated>
-    </task>
-    <task id="LOCAL-00027" summary="! variables moved to LoginPage + 2 bugs for fields validation highlighted">
-      <option name="closed" value="true" />
-      <created>1695804977863</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1695804977863</updated>
-    </task>
-    <option name="localTasksCounter" value="28" />
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,19 +374,6 @@
     <MESSAGE value="! test_login_incorrect_email_in_field complete + test naming convention changed" />
     <MESSAGE value="! test_login_incorrect_email_in_field added negative check for '.' symbol" />
     <MESSAGE value="! added test_login_incorrect_password_validation" />
-    <MESSAGE value="! varibales moved to LoginPage + 2 bugs for fields validation highlighted" />
-    <MESSAGE value="! variables moved to LoginPage + 2 bugs for fields validation highlighted" />
-    <option name="LAST_COMMIT_MESSAGE" value="! variables moved to LoginPage + 2 bugs for fields validation highlighted" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/autotests/LoginTest.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="! added test_login_incorrect_password_validation" />
   </component>
 </project>
