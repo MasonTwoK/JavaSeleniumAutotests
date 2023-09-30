@@ -140,6 +140,7 @@ class LoginTest extends BaseTest {
         loginPage.warning_message_text = loginPage.warning_message_elm.getText();
 
         assertThat(loginPage.warning_message_text).contains("не схоже на дійсний номер");
+
     }
 
 }
