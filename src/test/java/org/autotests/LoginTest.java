@@ -97,6 +97,8 @@ class LoginTest extends BaseTest {
 
         loginPage.warning_message_text = loginPage.warning_message_elm.getText();
         assertThat(loginPage.warning_message_text).contains("Ця пошта задовга");
+
+
     }
 
 
@@ -113,8 +115,8 @@ class LoginTest extends BaseTest {
         loginPage.warning_message_elm = driver.findElement(
                 By.xpath("//div[@class='css-jl1cuj']//div[@class='css-2t3wbf']")
         );
-
         loginPage.warning_message_text = loginPage.warning_message_elm.getText();
+
         assertThat(loginPage.warning_message_text).contains("надто короткий.");
 
 
@@ -132,7 +134,7 @@ class LoginTest extends BaseTest {
         initPage.header.ClickLogin();
 
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.UsernameFieldSendKeys("6");
+        loginPage.UsernameFieldSendKeys(loginPage.phone_number_with_missing_digit);
 
         //Need to be moved to LoginPage
         loginPage.warning_message_elm = driver.findElement(
@@ -141,6 +143,9 @@ class LoginTest extends BaseTest {
 
         assertThat(loginPage.warning_message_text).contains("не схоже на дійсний номер");
 
-    }
+        loginPage.warning_message_elm = driver.findElement(By.xpath("//div[@class='css-jha7bn']"));
+        loginPage.warning_message_text = loginPage.warning_message_elm.getText();
 
+        assertThat(loginPage.warning_message_text).contains("+380");
+    }
 }
